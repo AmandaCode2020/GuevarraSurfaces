@@ -1,0 +1,186 @@
+@import url(https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora);
+@import url(https://db.onlinewebfonts.com/c/a81c6ef023e90fb9f87ac017d242a337?family=Montserrat);
+@import url(https://db.onlinewebfonts.com/c/d40bbce8f4b00a569beac2454b69231e?family=Oswald);
+@import url(https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto);
+
+
+/* CAROUSEL */
+.carousel-item {
+    position: relative;
+    height: 100vh; 
+}
+.carousel-item img {
+    object-fit: cover; 
+    height: 100%;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 10px; 
+        padding: 0.5rem;
+    }
+}
+.carousel-img-size{
+    height: 100vh;
+}
+
+/*LEARN MORE BUTTON*/
+.btn-primary {
+    background-color: #B1BC3E; 
+    border-color:  #B1BC3E;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color:  #347788;
+    border-color:  #347788;
+    color: #fff;
+}
+
+/*CONTACT BUTTON*/
+.btn-contact {
+    background-color:#114C5B; 
+    border-color:  #114C5B;
+    color: #fff;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-contact:hover {
+    background-color:  #347788;
+    border-color:  #347788;
+    color: #fff;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    z-index: 1000; 
+    padding-left: 20px;
+    padding-right:20px;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    padding-left: 5px;
+    position: relative;
+}
+.nav-item a {
+    font-family: 'Roboto';
+    font-weight: 900;
+    color: #656565;
+}
+.nav-item a:hover {
+    color: #B1BC3E;
+}
+.navbar-nav > li {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+}
+.logo {
+    width: 6rem;
+    margin-left: 5px;
+}
+
+
+/* HEADLINE*/
+.background-image {
+    background-size: cover;
+    height: 400px; 
+    position: relative;
+}
+.background-overlay{
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 100%;
+}
+.background-title {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Oswald'; /* Title Font */
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+/* FOOTER */
+.footer {
+    background-color:#114C5B;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.footer a {
+    font-family: 'Roboto'; 
+    font-weight: regular;
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: #B1BC3E; 
+}
+
+/* BODY ELEMENTS */
+body{
+     display: flex;
+    flex-direction: column;
+}
+.content{
+    flex: 1;
+    padding: 20px;
+    overflow:scroll;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: 900; 
+}
+p {
+    font-family: 'Lora';
+    font-size: 1.2rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/*MODAL: PRODUCTS PAGE*/
+.modal-gallery img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+.modal-gallery img:hover {
+    opacity: 0.7;
+}
+.modal-background-image {
+    background-image: url('Images/ProjectHeadImg.jpg');
+    height: 300px; 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-overlay h1 {
+    font-size: 3rem;
+}

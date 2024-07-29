@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guevarra Surfaces</title>
+        <!--Link to Bootstrap Library-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+        <!--Link to Font families-->
+        <link href="https://db.onlinewebfonts.com/c/a81c6ef023e90fb9f87ac017d242a337?family=Montserrat" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/d40bbce8f4b00a569beac2454b69231e?family=Oswald" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto" rel="stylesheet">
+        
+        <!--Link to custom stylesheet-->
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    
+    <body>
+       <!--NAVBAR START-->
+       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" aria-label="Main navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="HomePage.html">
+                <img class="logo" src="./Images/Logo-Navbar.png" alt="Guevarra Surfaces Logo">
+            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="HomePage.html" title="Home Page">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AboutPage.html" title="About Page">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ServicesPage.html" title="Services Page">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="ProjectsPage.html" title="Projects Page">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="InspirationPage.html" title="Inspiration Page">INSPIRATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactPage.html" title="Contact Page">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        <!--NAVBAR END-->
+
+        <!-- Background Image Section -->
+        <div class="background-image" style="background-image: url('Images/ProjectsHeadImg.jpg');">
+            <div class="background-overlay">
+                <h1 class="background-title">PROJECTS</h1>
+            </div>
+        </div>
+
+        <!-- Main Contents Section -->
+        <div class="container-fluid mt-5">
+            <div class="row gallery">
+                <div class="col-md-4">
+                    <h4> Corporate Projects</h4>
+                    <img src="Images/Project1.jpg" class="img-fluid" alt="countertops for Coporate Companies" onclick="openModal('Images/Project1.jpg')">
+                </div>
+                <div class="col-md-4">
+                    <h4>Private Residence Projects</h4>
+                    <img src="Images/Project2.jpg" class="img-fluid" alt="Countertops for Private Residences" onclick="openModal('Images/Project2.jpg')">
+                </div>
+                <div class="col-md-4">
+                    <h4> Commercial Projects</h4>
+                    <img src="Images/Project3.jpg" class="img-fluid" alt="Countertops for Commercial Businesses" onclick="openModal('Images/Project3.jpg')">
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="galleryModalLabel">Project Gallery</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src=".." id="modalImage" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p style="text-align: center;"> &copy; 2024 Guevarra Surfaces | <a href="Privacy.html">Privacy Policy</a> | <a href="TOS.html">Terms of Service</a> | <a href="ContactPage.html">Contact Us</a></p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS Bundle with Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            function openModal(imageSrc) {
+                var modalImage = document.getElementById('modalImage');
+                modalImage.src = imageSrc;
+                var galleryModal = new bootstrap.Modal(document.getElementById('galleryModal'));
+                galleryModal.show();
+            }
+        </script>
+    </body>
+</html>

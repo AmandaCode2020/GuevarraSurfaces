@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guevarra Surfaces</title>
+
+    <!-- Link to Bootstrap Library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Link to Font family -->
+    <link href="https://db.onlinewebfonts.com/c/a81c6ef023e90fb9f87ac017d242a337?family=Montserrat" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/d40bbce8f4b00a569beac2454b69231e?family=Oswald" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto" rel="stylesheet">
+
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="Style.css">
+
+    <!-- Validation Code: https://www.w3schools.com/js/js_validation.asp -->
+    <script>
+        function validateForm() {
+            let name = document.forms["contactForm"]["name"].value;
+            let email = document.forms["contactForm"]["email"].value;
+            let message = document.forms["contactForm"]["message"].value;
+
+            if (name === "") {
+                alert("Please add your name");
+             
+                return false;
+            }
+            if (email === "") {
+                alert("Please add your email");
+         
+                return false;
+            }
+            if (message === "") {
+                alert("Please add a message");
+                return false;
+            }
+          
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" aria-label="Main navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="HomePage.html">
+                <img class="logo" src="./Images/Logo-Navbar.png" alt="Guevarra Surfaces Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="HomePage.html" title="Home Page">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutPage.html" title="About Page">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ServicesPage.html" title="Services Page">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ProjectsPage.html" title="Projects Page">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="InspirationPage.html" title="Inspiration Page">INSPIRATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="ContactPage.html" title="Contact Page">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- Background Image Section -->
+    <div class="background-image" style="background-image: url('Images/ContactHeadImg.jpg');">
+        <div class="background-overlay">
+            <h1 class="background-title">CONTACT</h1>
+        </div>
+    </div>
+
+    <!-- Main Contents Section -->
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4 class="card-title">Message Us!</h4>
+                        <br>
+                        <div class="contact-form">
+                            <form name="contactForm" onsubmit="return validateForm()">
+                                <div class="mb-3">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea name="message" class="form-control" placeholder="Your Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4 class="card-title">Contact Us!</h4>
+                        <br>
+                        <div class="contact-info">
+                            <p><i class="bi bi-telephone-fill"></i> +1 868 290 2302</p>
+                            <p><i class="bi bi-envelope"></i> guevarrasurfaces@countertops.com</p>
+                            <p><i class="bi bi-house-door-fill"></i> 12 Countertop Street, Arima, Trinidad & Tobago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p style="text-align: center;"> &copy; 2024 Guevarra Surfaces | <a href="Privacy.html">Privacy Policy</a> | <a href="TOS.html">Terms of Service</a> | <a href="ContactPage.html">Contact Us</a></p>
+            </div>
+        </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

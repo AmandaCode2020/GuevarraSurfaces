@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guevarra Surfaces</title>
+        
+        <!-- Link to Bootstrap Library -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Link to Font families -->
+        <link href="https://db.onlinewebfonts.com/c/a81c6ef023e90fb9f87ac017d242a337?family=Montserrat" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/d40bbce8f4b00a569beac2454b69231e?family=Oswald" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto" rel="stylesheet">
+        
+        <!-- Link to custom stylesheet -->
+        <link rel="stylesheet" href="Style.css">
+
+        <!--AboutPage specific style-->
+        <style>
+            html {
+            box-sizing: border-box;
+            }
+            
+            *, *:before, *:after {
+            box-sizing: inherit;
+            }
+            .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+            }
+            @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+            }
+            .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+            .container {
+            padding: 0 16px;
+            }
+            .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+            </style>
+    </head>
+
+    <body>
+       <!--NAVBAR START-->
+       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" aria-label="Main navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="HomePage.html">
+                <img class="logo" src="./Images/Logo-Navbar.png" alt="Guevarra Surfaces Logo">
+            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="HomePage.html" title="Home Page">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="AboutPage.html" title="About Page">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ServicesPage.html" title="Services Page">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ProjectsPage.html" title="Projects Page">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="InspirationPage.html" title="Inspiration Page">INSPIRATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactPage.html" title="Contact Page">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        <!--NAVBAR END-->
+
+        <!-- Background Image Section -->
+        <div class="background-image" style="background-image: url('Images/AboutHeadImg.jpg');">
+            <div class="background-overlay">
+                <h1 class="background-title">ABOUT US</h1>
+            </div>
+        </div>
+
+        <!-- Main Contents Section -->
+        <div class="container mt-5 mb-5">
+            <h3>OUR TEAM</h3>
+            <p>At Guevarra Surfaces, we take pride in our skilled team. Each member brings a unique blend of expertise, creativity, and passion to every project. Get to know the faces behind our stunning countertops!</p>
+            <br>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="Images/Team1.jpg" alt="Joel Guevarra" style="width:100%">
+                        <div class="container">
+                            <br>
+                            <h4>Joel Guevarra</h4>
+                            <h6>Director  |  Lead Countertop Installer & Fabricator </h6>
+                            <br>
+                            <p>“Crafting countertops isn’t just a job; it’s my passion. With 28 years of hands-on experience, I’ve honed my skills to perfection. Every countertop we install tells a story of quality, precision, and dedication.” ~Joel</p>
+                            <a href="ContactPage.html">
+                                <p><button type = "button" class="btn btn-contact">Contact</button></p>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <div class="card">
+                        <img src="Images/Team2.jpg" alt="Mike Smith" style="width:100%">
+                        <div class="container">
+                        <br>
+                        <h4>Jane Smith</h4>
+                        <h6>Office Manager</h6>
+                        <br>
+                        <p>"Our office is my symphony, and I conduct it with precision. From juggling schedules to orchestrating seamless communication, I ensure harmony in every keystroke. Efficiency isn’t just a goal; it’s my forte." ~Jane </p>
+                        <a href="ContactPage.html">
+                            <p><button type = "button" class="btn btn-contact">Contact</button></p>
+                        </a> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                        <img src="Images/Team3.jpg" alt="John Doe" style="width:100%">
+                        <div class="container">
+                            <br>
+                            <h4>John Doe</h4>
+                            <h6>CAD & AutoCAD Technician</h6>
+                            <br>
+                            <p> “Designs come alive on my screen. With AutoCAD as my canvas, I weave intricate patterns for our countertops. Precision matters, and I’m the architect of functionality and aesthetics.” ~John</p>
+                            <a href="ContactPage.html">
+                                <p><button type = "button" class="btn btn-contact">Contact</button></p>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>OUR HISTORY</h3>
+            <p>Quisque tempus sit amet tellus ornare finibus. Duis sed velit nibh. Curabitur interdum sed quam in mattis. Nam a rhoncus elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tempor, neque in consequat dignissim, massa magna condimentum ipsum, ac dictum nulla orci vitae massa. Curabitur eu ante at risus vehicula semper. Pellentesque nec nunc enim. Integer ac dapibus nisi. Ut sed mauris sit amet purus convallis aliquam. In pellentesque quam et ultrices congue. Vestibulum ut accumsan risus. Etiam elementum nisi nec ipsum bibendum ornare. Nullam ut fringilla massa. Morbi efficitur nunc vel libero auctor facilisis.</p>
+                
+            <hr>
+
+            <h3>OUR MISSION</h3>
+            <p>Sed vehicula varius tortor. Pellentesque tempor justo id condimentum molestie. In sollicitudin magna eget quam facilisis hendrerit. Praesent id sodales libero. Quisque accumsan nisi erat. Aliquam leo massa, facilisis et venenatis et, commodo id magna. Proin et bibendum ante. Suspendisse feugiat ultricies neque a egestas. Morbi fermentum quam mauris, id elementum nunc gravida at. Nunc sit amet urna justo. Vivamus sed posuere augue. Nunc dapibus elit non mauris porttitor, in interdum ligula blandit. Vivamus nec sollicitudin eros. Integer eget dolor dictum, finibus eros commodo, tempus mauris.</p>
+        </div>
+    
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p style="text-align: center;"> &copy; 2024 Guevarra Surfaces | <a href="Privacy.html">Privacy Policy</a> | <a href="TOS.html">Terms of Service</a> | <a href="ContactPage.html">Contact Us</a></p>
+            </div>
+        </footer>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,120 @@
+<!--
+Student Name: Amanda Callender
+Student ID: 20220765
+Class: INFO 0211 
+Lecturer: S.Sylvester (Thursdays 17:00 - 20:00)
+Assignment: Assignment 3 Website
+Purpose of Project: A Website for the business Guevarra Surfaces-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guevarra Surfaces</title>
+        
+        <!--Link to Bootstrap Library-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+        <!--Link to Font families-->
+        <link href="https://db.onlinewebfonts.com/c/a81c6ef023e90fb9f87ac017d242a337?family=Montserrat" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/d40bbce8f4b00a569beac2454b69231e?family=Oswald" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto" rel="stylesheet">
+
+        <!--Link to custom stylesheet-->
+        <link rel="stylesheet" href="Style.css">
+    </head>
+
+    <body>
+        <!--NAVBAR START-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" aria-label="Main navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="HomePage.html">
+                <img class="logo" src="./Images/Logo-Navbar.png" alt="Guevarra Surfaces Logo">
+            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="HomePage.html" title="Home Page">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AboutPage.html" title="About Page">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ServicesPage.html" title="Services Page">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ProjectsPage.html" title="Projects Page">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="InspirationPage.html" title="Inspiration Page">INSPIRATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactPage.html" title="Contact Page">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        <!--NAVBAR END-->
+                    
+        <!--CAROUSEL START-->
+        <!--Source: https://getbootstrap.com/docs/5.3/components/carousel/-->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Images/Slide1.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Custom Fabrication & Installation</h2>
+                        <p style ="text-align: center;">At Guevarra Surfaces, we specialise in custom countertop fabrication & installation for both residential and commercial spaces.</p>
+                        <a href="ServicesPage.html"> 
+                            <button type = "button" class="btn btn-primary">LEARN MORE</button>
+                        </a> 
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/Slide2.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Design Expertise</h2>
+                        <p style="text-align: center;">Whether you're renovating your kitchen or upgrading your office space, we've got you covered.</p>
+                        <a href="ProjectsPage.html">  
+                        <button type = "button" class="btn btn-primary">LEARN MORE</button>
+                        </a> 
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/Slide3.jpg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Material Selection</h2>
+                        <p style="text-align: center;">At Guevarra Surfaces, our team of skilled artisans crafts stunning countertops from high-quality materials.</p>
+                        <a href="AboutPage.html">
+                            <button type = "button" class="btn btn-primary">LEARN MORE</button>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+        <!-- CAROUSEL END -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+
